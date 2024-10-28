@@ -1,0 +1,25 @@
+volumes:
+  garage: {}
+
+services:
+  garage:
+    image: dxflrs/garage:v1.0.0
+    ports:
+      - "3900:3900"
+      - "3902:3902"
+      - "3903:3903"
+      - "3904:3904"
+    volumes:
+      - ./garage.toml:/etc/garage.toml
+      - garage:/var/lib/garage
+
+  rclone:
+    image: rclone/rclone:1
+    volumes:
+      - ./rclone.cfg:/config/rclone
+      - /tmp/rclone_data:/data
+
+  filestash:
+    image: machines/filestash:latest
+    ports:
+      - "8334:8334"

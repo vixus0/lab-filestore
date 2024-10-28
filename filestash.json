@@ -1,0 +1,94 @@
+{
+    "general": {
+        "name": null,
+        "port": null,
+        "host": "localhost:8334",
+        "secret_key": "h24UXf0aSCTryqRD",
+        "force_ssl": null,
+        "editor": "vim",
+        "fork_button": false,
+        "logout": null,
+        "display_hidden": null,
+        "refresh_after_upload": null,
+        "upload_button": null,
+        "upload_pool_size": null,
+        "filepage_default_view": null,
+        "filepage_default_sort": null,
+        "cookie_timeout": null,
+        "custom_css": null
+    },
+    "features": {
+        "api": {
+            "enable": null,
+            "api_key": null
+        },
+        "share": {
+            "enable": null,
+            "default_access": null,
+            "redirect": null
+        },
+        "protection": {
+            "iframe": null,
+            "enable_chromecast": null,
+            "zip_timeout": null,
+            "ls_timeout": null,
+            "enable": null,
+            "disable_svg": null
+        },
+        "office": {
+            "enable": null,
+            "onlyoffice_server": null,
+            "can_download": null
+        },
+        "server": {
+            "console_enable": null
+        },
+        "search": {
+            "explore_timeout": null
+        },
+        "video": {
+            "blacklist_format": null,
+            "enable_transcoder": null
+        }
+    },
+    "log": {
+        "enable": null,
+        "level": null,
+        "telemetry": null
+    },
+    "email": {
+        "server": null,
+        "port": null,
+        "username": null,
+        "password": null,
+        "from": null
+    },
+    "auth": {
+        "admin": "$2a$05$31YKiBChqrkYhUkZVlfdUeU.e3XKNKNbEXftmwyYx94p4A1KV/XN2"
+    },
+    "middleware": {
+        "identity_provider": {
+            "type": "admin",
+            "params": "iNw5d_SVPygxwt9YzJgs3lwH7_bM4qSyXiaWp_Yw4Vx-R8ASxD8wmD57L_GmemarSJ3DPR7624wBstAlEr_dMj8xLZC6w78Y96ANUhoV"
+        },
+        "attribute_mapping": {
+            "related_backend": "s3, S3",
+            "params": "iNw5d_SVPygxwt9Zqk8ouAbNKMLWXeKWN-vFlKTohhI6P4Unv_BXft_d80xgp9YvhVYq_0UGsUAqy71yNFhUbzr76W3NtdAFWWkEdPpMetFO38SCO5t1haymu3OUo4hhRE98i99UgrxEoSa4SvLOm_8mf4jv-kuzyzuI2gqtZxH5Mo1KXzIPbmQn_KBNM4fWOlACq_yeNX52a2utdkKyP83swASizs8JkeSgkp3lMptG41ZzVuwf-gW2HIY-LJDtOukKWj0="
+        }
+    },
+    "constant": {
+        "user": "filestash",
+        "emacs": false,
+        "pdftotext": false
+    },
+    "connections": [
+        {
+            "label": "FTP",
+            "type": "ftp"
+        },
+        {
+            "label": "S3",
+            "type": "s3"
+        }
+    ]
+}
